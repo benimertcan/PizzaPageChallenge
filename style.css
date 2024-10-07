@@ -12,11 +12,21 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  --color-yellow:#FDC913;
+  --color-lightGray:#5F5F5F;
+  --color-darkGrey:#292929;
+  --color-red:#CE2829;
+  --color-bej:#FAF7F2;
+  --font-Roboto-Condensed:"Roboto+Condensed",sans-serif;
+  --font-Barlow:"Barlow",sans-serif;
+  --font-Quattrocento:"Quattrocento",sans-serif;
+  --font-Satisfy:"Satisfy",sans-serif;
 }
 /*{
   border: 1px solid purple !important;
   background-color: rgba(128, 0, 128, 0.02);
-}*/
+}
 .satisfy-regular {
   font-family: "Satisfy", cursive;
   font-weight: 400;
@@ -91,7 +101,7 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
+}*/
 
 .header-main{
   background-image: url("/public/assets/iteration-1/home-banner.png");
@@ -115,7 +125,7 @@ text-align: center;
 align-items: center;
 }
 .header-content button{
-  background-color: #FDC913;
+  background-color: var(--color-yellow);
   color: black;
   width: 10vw;
   text-align: center;
@@ -132,14 +142,14 @@ align-items: center;
   align-self: center;
 }
 .header-text h3{
-  font-family:"Satisfy" ;
-  color: #FDC913;
+  font-family:var(--font-Satisfy) ;
+  color: var(--color-yellow);
   font-size: 32px;
   padding: 0;
   margin: 0;
 }
 .header-text h1{
-  font-family: "Barlow";
+  font-family: var(--font-Barlow);
   margin:10px;
   font-size: 64px;
 }
@@ -159,7 +169,7 @@ button{
   display: flex;
   flex-direction: row;
   background-color:white ;
-  font-family: "Barlow";
+  font-family: var(--font-Barlow);
   justify-content: center;
   width: 100vw;
   margin: 0;
@@ -181,7 +191,7 @@ margin: 10px;
   padding: 3vw 0;
   width: 100%;
   justify-content: space-around;
-  background-color:#FAF7F2;
+  background-color:var(--color-bej);
   color: black;
 }
 
@@ -191,10 +201,10 @@ margin: 10px;
   width: 50%;
   height: 50%;
   color: white;
-  font-family: "Barlow";
+  font-family: var(--font-Barlow);
 }
 .first-ones button{
-  color: #CE2829;
+  color: var(--color-red);
   background: white;
   margin: 0;
 }
@@ -211,13 +221,13 @@ margin: 10px;
   
 }
 .ozel-lezzetus h2{
-  font-family: "Quattrocento";
+  font-family: var(--font-Quattrocento);
   font-weight: bolder;
   font-size: 4rem;
   margin: 0;
 }
 .ozel-lezzetus p{
-  font-family: "Barlow";
+  font-family:var(--font-Barlow);
   font-size: larger;
   font-weight: bold;
   margin: 0;
