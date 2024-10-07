@@ -13,6 +13,15 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+/*{
+  border: 1px solid purple !important;
+  background-color: rgba(128, 0, 128, 0.02);
+}*/
+.satisfy-regular {
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
 
 a {
   font-weight: 500;
@@ -29,6 +38,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  flex-direction: column;
 }
 
 h1 {
@@ -82,6 +92,160 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+
+.header-main{
+  background-image: url("/public/assets/iteration-1/home-banner.png");
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-position: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.header-content{
+  display: flex;
+  flex-direction: column;
+flex-wrap: nowrap;
+text-align: center;
+align-items: center;
+}
+.header-content button{
+  background-color: #FDC913;
+  color: black;
+  width: 10vw;
+  text-align: center;
+  padding: 1vw 1vw;
+}
+
+.header-text{
+  display: flex;
+  flex-direction: column;
+  width:54%;
+  text-align: center;
+  gap: 0;
+  margin-top: 3vw;
+  align-self: center;
+}
+.header-text h3{
+  font-family:"Satisfy" ;
+  color: #FDC913;
+  font-size: 32px;
+  padding: 0;
+  margin: 0;
+}
+.header-text h1{
+  font-family: "Barlow";
+  margin:10px;
+  font-size: 64px;
+}
+button{
+  
+  border: none;
+  border-radius: 25px;
+  padding: 10px 50px;
+}
+.menu{
+  display: flex;
+  flex-direction: row;
+  background-color:white ;
+  width: 100%;
+}
+.menu-items{
+  display: flex;
+  flex-direction: row;
+  background-color:white ;
+  font-family: "Barlow";
+  justify-content: center;
+  width: 100vw;
+  margin: 0;
+  font-weight: bold;
+}
+.menu-items li button{
+list-style-type: none;
+margin: 10px;
+text-align: center;
+display: flex;
+align-items: center;
+color: black;
+background-color: white;
+padding: 10px;
+margin: 10px;
+}
+.all-page{
+  display: flex;
+  padding: 3vw 0;
+  width: 100%;
+  justify-content: space-around;
+  background-color:#FAF7F2;
+  color: black;
+}
+
+.first-ones{
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  height: 50%;
+  color: white;
+  font-family: "Barlow";
+}
+.first-ones button{
+  color: #CE2829;
+  background: white;
+  margin: 0;
+}
+
+.ozel-lezzetus{
+  background-image: url("public/assets/iteration-2/cta/kart-1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5%;
+  padding: 1vw;
+  margin-right: 3%;
+  width: 50vw;
+  
+}
+.ozel-lezzetus h2{
+  font-family: "Quattrocento";
+  font-weight: bolder;
+  font-size: 4rem;
+  margin: 0;
+}
+.ozel-lezzetus p{
+  font-family: "Barlow";
+  font-size: larger;
+  font-weight: bold;
+  margin: 0;
+}
+
+.other-2{
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.other-2 div{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  border-radius: 5%;
+  padding: 1vw;
+}
+.hackhatlon{
+  background-image: url("public/assets/iteration-2/cta/kart-2.png");
+}
+.npm-kurye{
+  background-image: url("public/assets/iteration-2/cta/kart-3.png");
+}
+
+
 
 @media (prefers-color-scheme: light) {
   :root {
