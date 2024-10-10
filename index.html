@@ -10,61 +10,115 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Workintech + 🍕</title>
+  <title>Teknolojik Yemekler🍕</title>
 </head>
 
 <body>
-  <div class="home">
+  <section class="home">
+    <!---Header Start-->
     <section class="header-main">
-     <br>
+      <br>
       <img src="public/assets/iteration-1/logo.svg">
       <div class="header-content">
-        <div class="header-text">
-          <h3>fırsatı kaçırma</h3>
-          <h1>KOD ACIKTIRIR PİZZA, DOYURUR</h1>
-        </div>
+        <h3>fırsatı kaçırma</h3>
+        <h1>KOD ACIKTIRIR PİZZA, DOYURUR</h1>
         <button class="header-btn">ACIKTIM</button>
       </div>
     </section>
+    <!---Header End-->
+
+    <!--Menu Section Start-->
     <section class="menu">
-      <ul class="menu-items">
-        <li><button><img src="public/assets/iteration-2/icons/1.svg">YENİ! Kore</button></li>
-        <li><button><img src="public/assets/iteration-2/icons/2.svg">Pizza</button></li>
-        <li><button><img src="public/assets/iteration-2/icons/3.svg">Burger</button></li>
-        <li><button><img src="public/assets/iteration-2/icons/4.svg">Kızartmalar</button></li>
-        <li><button><img src="public/assets/iteration-2/icons/5.svg">Fast Food</button></li>
-        <li><button><img src="public/assets/iteration-2/icons/6.svg">Gazlı İçecek</button></li>
-      </ul>
+      <div class="menu-items">
+        <li><button><img src="public/assets/iteration-2/icons/1.svg"></button>YENİ! Kore</li>
+        <li><button><img src="public/assets/iteration-2/icons/2.svg"></button>Pizza</li>
+        <li><button><img src="public/assets/iteration-2/icons/3.svg"></button>Burger</li>
+        <li><button><img src="public/assets/iteration-2/icons/4.svg"></button>Kızartmalar</li>
+        <li><button><img src="public/assets/iteration-2/icons/5.svg"></button>Fast Food</li>
+        <li><button><img src="public/assets/iteration-2/icons/6.svg"></button>Gazlı İçecek</li>
+      </div>
     </section>
-    <section class="all-page">
+    <!--MenuSection End-->
 
-      <div class="first-ones">
-
-        <div class="ozel-lezzetus">
-          
-            <h2>Özel<br>Lezzetus</h2>
-            <p>Position: Absolute Acı Burger</p>
-            <button>SİPARİŞ VER</button>
-         
+    <!--Product Section Start-->
+    <section class="product">
+      <div class="product-div">
+        <div class="product-cards images-center"
+          style="padding: 1rem;  background-image: url(public/assets/iteration-2/cta/kart-1.png);">
+          <h1>Özel<br>Lezzetus</h1>
+          <p>Position:Absolute Acı Burger</p>
+          <button>SİPARİŞ VER</button>
         </div>
-
-        <div class="other-2">
-          <div class="hackhatlon">
-            <h3>Hackhatlon<br> Burger Menü</h3>
+        <div>
+          <div class="product-cards images-center"
+            style="padding: 1rem;  background-image: url(public/assets/iteration-2/cta/kart-2.png);">
+            <h2>Hackathlon<br>Burger Menü</h2>
             <button>SİPARİŞ VER</button>
           </div>
-          <div class="npm-kurye">
-            <h3 style="color: #292929;"><span style="color: #CE2829;">Çoooook</span> hızlı<br> npm gibi kurye</h3>
+          <div class="product-cards images-center"
+            style="padding: 1rem;  background-image: url(public/assets/iteration-2/cta/kart-3.png);">
+            <h2><span style="color:#CE2829 ;">Çoooook</span> hızlı<br>npm gibi kurye</h2>
             <button>SİPARİŞ VER</button>
+          </div>
+        </div>
+      </div>
+
+      <h3>en çok paketlenen menüler</h3>
+
+      <p style="font-weight: bolder; font-size: 2rem;margin: 0;">Acıktıran Kodlara Doyuran Lezzetler</p>
+
+      <div class="menu-items">
+        <li><button><img src="public/assets/iteration-2/icons/1.svg"></button>Ramen</li>
+        <li><button><img src="public/assets/iteration-2/icons/2.svg"></button>Pizza</li>
+        <li><button><img src="public/assets/iteration-2/icons/3.svg"></button>Burger</li>
+        <li><button><img src="public/assets/iteration-2/icons/4.svg"></button>French Fries</li>
+        <li><button><img src="public/assets/iteration-2/icons/5.svg"></button>Fast Food</li>
+        <li><button><img src="public/assets/iteration-2/icons/6.svg"></button>Soft Drinks</li>
+      </div>
+
+      <div class="food-and-drinks row">
+
+        <div class="food-and-drink column">
+          <img class="images-center" src="public/assets/iteration-2/pictures/food-1.png">
+          <a style="padding: 0;margin: 0 1rem;font-weight: bold; font-size: 1.2rem;">Terminal Pizza</a>
+          <div style="display: flex; justify-content: flex-end;">
+            <a style="margin-right: 6.5rem ;display: flex;opacity: 0.8;">4.9</a>
+            <a style="margin: 0 2rem;opacity: 0.8;">(200)</a>
+            <a style="margin: 0 1rem;font-weight: bold;">60₺</a>
+          </div>
+        </div>
+
+        <div class="food-and-drink column">
+          <img class="images-center" src="public/assets/iteration-2/pictures/food-2.png">
+          <a style="padding: 0;margin: 0 1rem;font-weight: bold; font-size: 1.2rem;">Postiton Absolute Acı Pizza</a>
+          <div style="display: flex; justify-content: flex-end;">
+            <a style="margin-right: 6.5rem ;display: flex;opacity: 0.8;">4.9</a>
+            <a style="margin: 0 2rem;opacity: 0.8;">(200)</a>
+            <a style="margin: 0 1rem;font-weight: bold;">60₺</a>
+          </div>
+        </div>
+
+        <div class="food-and-drink column">
+          <img class="images-center" src="public/assets/iteration-2/pictures/food-3.png">
+          <a style="padding: 0;margin: 0 1rem;font-weight: bold; font-size: 1.2rem;">useEffect Tavuklu Burger</a>
+          <div style="display: flex; justify-content: flex-end;">
+            <a style="margin-right: 6.5rem ;display: flex;opacity: 0.8;">4.9</a>
+            <a style="margin: 0 2rem;opacity: 0.8;">(200)</a>
+            <a style="margin: 0 1rem;font-weight: bold;">60₺</a>
           </div>
         </div>
 
       </div>
+      </div>
+    </section>
+    <!--Product Section End-->
+
+    <!--Footer Section Start-->
+    <section class="footer">
 
     </section>
-
-  </div>
-
+    <!--Footer Section End-->
+  </section>
 </body>
 
 </html>

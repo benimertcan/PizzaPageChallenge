@@ -13,16 +13,17 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  --color-yellow:#FDC913;
-  --color-lightGray:#5F5F5F;
-  --color-darkGrey:#292929;
-  --color-red:#CE2829;
-  --color-bej:#FAF7F2;
-  --font-Roboto-Condensed:"Roboto+Condensed",sans-serif;
-  --font-Barlow:"Barlow",sans-serif;
-  --font-Quattrocento:"Quattrocento",sans-serif;
-  --font-Satisfy:"Satisfy",sans-serif;
+  --color-yellow: #FDC913;
+  --color-lightGray: #5F5F5F;
+  --color-darkGrey: #292929;
+  --color-red: #CE2829;
+  --color-bej: #FAF7F2;
+  --font-Roboto-Condensed: "Roboto+Condensed", sans-serif;
+  --font-Barlow: "Barlow", sans-serif;
+  --font-Quattrocento: "Quattrocento", sans-serif;
+  --font-Satisfy: "Satisfy", sans-serif;
 }
+
 /*{
   border: 1px solid purple !important;
   background-color: rgba(128, 0, 128, 0.02);
@@ -102,8 +103,14 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }*/
-
-.header-main{
+/* {
+  border: purple 1px solid;
+}*/
+body{
+  font-family: var(--font-Barlow);
+  font-weight: bolder;
+}
+.header-main {
   background-image: url("/public/assets/iteration-1/home-banner.png");
   height: 90vh;
   width: 100%;
@@ -117,143 +124,136 @@ button:focus-visible {
   margin: 0;
   padding: 0;
 }
-.header-content{
+.header-content {
   display: flex;
   flex-direction: column;
-flex-wrap: nowrap;
-text-align: center;
-align-items: center;
+  flex-wrap: nowrap;
+  text-align: center;
+  align-items: center;
+  width: 35rem;
 }
-.header-content button{
+.header-content button {
   background-color: var(--color-yellow);
   color: black;
   width: 10vw;
   text-align: center;
   padding: 1vw 1vw;
-}
 
-.header-text{
-  display: flex;
-  flex-direction: column;
-  width:54%;
-  text-align: center;
-  gap: 0;
-  margin-top: 3vw;
-  align-self: center;
 }
-.header-text h3{
-  font-family:var(--font-Satisfy) ;
+h3 {
+  font-family: var(--font-Satisfy);
   color: var(--color-yellow);
   font-size: 32px;
   padding: 0;
   margin: 0;
 }
-.header-text h1{
+h1 {
   font-family: var(--font-Barlow);
-  margin:10px;
+  margin: 10px;
   font-size: 64px;
 }
-button{
-  
+button {
   border: none;
   border-radius: 25px;
-  padding: 10px 50px;
 }
-.menu{
+.menu {
   display: flex;
   flex-direction: row;
-  background-color:white ;
-  width: 100%;
-}
-.menu-items{
-  display: flex;
-  flex-direction: row;
-  background-color:white ;
-  font-family: var(--font-Barlow);
+  align-items: center;
   justify-content: center;
-  width: 100vw;
-  margin: 0;
-  font-weight: bold;
+  background-color: white;
 }
-.menu-items li button{
-list-style-type: none;
-margin: 10px;
-text-align: center;
-display: flex;
-align-items: center;
-color: black;
-background-color: white;
-padding: 10px;
-margin: 10px;
-}
-.all-page{
-  display: flex;
-  padding: 3vw 0;
-  width: 100%;
-  justify-content: space-around;
-  background-color:var(--color-bej);
-  color: black;
-}
-
-.first-ones{
+.menu-items {
   display: flex;
   flex-direction: row;
-  width: 50%;
-  height: 50%;
-  color: white;
+  background-color: white;
   font-family: var(--font-Barlow);
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin:1rem 0 ;
 }
-.first-ones button{
+.menu-items li {
+  display: flex;
+  align-items: center;
+  color: black;
+  margin-right: 1rem;
+}
+.menu-items li button {
+  background-color: white;
+  margin: 0 .5rem;
+}
+.menu-items li:hover {
+  opacity: 0.5;
+}
+
+.product {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: var(--color-bej);
+  color: black;
+  padding: 5rem 0;
+  width: 100%;
+}
+.product h3{
   color: var(--color-red);
-  background: white;
-  margin: 0;
+  padding: 0;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
-
-.ozel-lezzetus{
-  background-image: url("public/assets/iteration-2/cta/kart-1.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 5%;
-  padding: 1vw;
-  margin-right: 3%;
-  width: 50vw;
-  
-}
-.ozel-lezzetus h2{
+.product-div h1{
   font-family: var(--font-Quattrocento);
-  font-weight: bolder;
-  font-size: 4rem;
-  margin: 0;
-}
-.ozel-lezzetus p{
-  font-family:var(--font-Barlow);
-  font-size: larger;
-  font-weight: bold;
+  padding: 0;
   margin: 0;
 }
 
-.other-2{
+.product-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: white;
+}
+.product-div button{
+  color:var(--color-red);
+  background-color: white;
+  padding: .5rem 1rem;
+  font-weight: bold;
+}
+.images-center{
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.product-cards{
+  border-radius: 1rem;
+  margin: .5rem;
+  width: 25rem;
+}
+.column{
   display: flex;
   flex-direction: column;
-  width: 50vw;
-  font-size: 1.5rem;
-  font-weight: bold;
 }
-.other-2 div{
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 25vh;
-  border-radius: 5%;
-  padding: 1vw;
+.row{
+  display: flex;
+  flex-direction: row;
 }
-.hackhatlon{
-  background-image: url("public/assets/iteration-2/cta/kart-2.png");
+.food-and-drink{
+  background-color: white;
 }
-.npm-kurye{
-  background-image: url("public/assets/iteration-2/cta/kart-3.png");
+.product .menu-items{
+  background-color: var(--color-bej);
 }
+.product li{
+  border-radius: 1rem;
+  background-color: white;
+}
+
+
+
 
 
 
@@ -262,9 +262,11 @@ margin: 10px;
     color: #213547;
     background-color: #ffffff;
   }
+
   a:hover {
     color: #747bff;
   }
+
   button {
     background-color: #f9f9f9;
   }
