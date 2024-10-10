@@ -1,7 +1,7 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
-  font-weight: 400;
+
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -15,7 +15,7 @@
 
   --color-yellow: #FDC913;
   --color-lightGray: #5F5F5F;
-  --color-darkGrey: #292929;
+  --color-darkGrey: #1A1A1A;
   --color-red: #CE2829;
   --color-bej: #FAF7F2;
   --font-Roboto-Condensed: "Roboto+Condensed", sans-serif;
@@ -106,10 +106,12 @@ button:focus-visible {
 /* {
   border: purple 1px solid;
 }*/
-body{
+
+* body {
   font-family: var(--font-Barlow);
-  font-weight: bolder;
+  background-color: var(--color-darkGrey);
 }
+
 .header-main {
   background-image: url("/public/assets/iteration-1/home-banner.png");
   height: 90vh;
@@ -123,7 +125,9 @@ body{
   align-items: center;
   margin: 0;
   padding: 0;
+  padding-top: 3rem;
 }
+
 .header-content {
   display: flex;
   flex-direction: column;
@@ -132,14 +136,20 @@ body{
   align-items: center;
   width: 35rem;
 }
+
 .header-content button {
   background-color: var(--color-yellow);
   color: black;
-  width: 10vw;
+  width: 15%;
+  height: 3vh;
   text-align: center;
   padding: 1vw 1vw;
-
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-weight: bolder;
 }
+
 h3 {
   font-family: var(--font-Satisfy);
   color: var(--color-yellow);
@@ -147,43 +157,51 @@ h3 {
   padding: 0;
   margin: 0;
 }
+
 h1 {
   font-family: var(--font-Barlow);
   margin: 10px;
   font-size: 64px;
 }
+
 button {
   border: none;
   border-radius: 25px;
 }
+button:hover{
+  opacity: 0.7;
+}
+
 .menu {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
   background-color: white;
 }
+
 .menu-items {
   display: flex;
   flex-direction: row;
-  background-color: white;
-  font-family: var(--font-Barlow);
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-evenly;
   align-content: center;
-  margin:1rem 0 ;
+  flex-wrap: wrap;
+  background-color: white;
+  margin: 1rem 0;
 }
+
 .menu-items li {
   display: flex;
   align-items: center;
   color: black;
-  margin-right: 1rem;
+  width: 9rem;
+  margin: .5rem;
 }
+
 .menu-items li button {
   background-color: white;
   margin: 0 .5rem;
 }
+
 .menu-items li:hover {
   opacity: 0.5;
 }
@@ -199,57 +217,98 @@ button {
   padding: 5rem 0;
   width: 100%;
 }
-.product h3{
+
+.product h3 {
   color: var(--color-red);
   padding: 0;
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
-.product-div h1{
+
+.product-div h1 {
   font-family: var(--font-Quattrocento);
   padding: 0;
   margin: 0;
 }
 
-.product-div{
+.product-div {
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
   color: white;
 }
-.product-div button{
-  color:var(--color-red);
+
+.product-div button {
+  color: var(--color-red);
   background-color: white;
   padding: .5rem 1rem;
   font-weight: bold;
 }
-.images-center{
+
+.images-center {
   background-repeat: no-repeat;
   background-position: center;
 }
-.product-cards{
+
+.product-cards {
   border-radius: 1rem;
   margin: .5rem;
   width: 25rem;
 }
-.column{
+
+.column {
   display: flex;
   flex-direction: column;
 }
-.row{
+
+.row {
   display: flex;
   flex-direction: row;
 }
-.food-and-drink{
+
+.food-and-drink {
   background-color: white;
+  margin: 1rem;
 }
-.product .menu-items{
+
+.product .menu-items {
   background-color: var(--color-bej);
 }
-.product li{
+
+.product li {
   border-radius: 1rem;
   background-color: white;
+}
+
+.footer-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+  border: 1rem;
+}
+
+.footer-images img {
+  margin-right: 1rem;
+  border-radius: .5rem;
+}
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bottom-end {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  border-top: 1px solid darkgray;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
 }
 
 
@@ -269,5 +328,44 @@ button {
 
   button {
     background-color: #f9f9f9;
+  }
+}
+
+@media (max-width:650px) {
+  .header-main {
+    height: 100vh;
+    padding-top: 5rem;
+  }
+
+  .header-content button {
+    width: 25%;
+    height: 2rem;
+  }
+
+  .header-content {
+    width: 25rem;
+  }
+
+  .header-content h3 {
+    font-size: 1px;
+    opacity: 0;
+  }
+
+  .menu-items {
+    width: 25rem;
+  }
+
+  .product-cards {
+    width: 20rem;
+  }
+
+  .mid-text {
+    width: 16rem;
+  }
+
+  .footer-div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
 }

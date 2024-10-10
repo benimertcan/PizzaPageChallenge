@@ -17,7 +17,6 @@
   <section class="home">
     <!---Header Start-->
     <section class="header-main">
-      <br>
       <img src="public/assets/iteration-1/logo.svg">
       <div class="header-content">
         <h3>fırsatı kaçırma</h3>
@@ -57,7 +56,7 @@
           </div>
           <div class="product-cards images-center"
             style="padding: 1rem;  background-image: url(public/assets/iteration-2/cta/kart-3.png);">
-            <h2><span style="color:#CE2829 ;">Çoooook</span> hızlı<br>npm gibi kurye</h2>
+            <h2 style="color: black;"><span style="color:#CE2829 ;">Çoooook</span> hızlı<br>npm gibi kurye</h2>
             <button>SİPARİŞ VER</button>
           </div>
         </div>
@@ -65,18 +64,21 @@
 
       <h3>en çok paketlenen menüler</h3>
 
-      <p style="font-weight: bolder; font-size: 2rem;margin: 0;">Acıktıran Kodlara Doyuran Lezzetler</p>
+      <p class="mid-text" style="font-weight: bolder; font-size: 2rem;margin: 0;text-align: center;">Acıktıran Kodlara
+        Doyuran Lezzetler</p>
+      <section class="menu" style="background-color: #FAF7F2;">
+        <div class="menu-items">
+          <li><button><img src="public/assets/iteration-2/icons/1.svg"></button>Ramen</li>
+          <li style="background-color:#1A1A1A; color: white;"><button style="background-color: #1A1A1A;"><img src="public/assets/iteration-2/icons/2.svg" style="background-color: #1A1A1A;"></button>Pizza</li>
+          <li><button><img src="public/assets/iteration-2/icons/3.svg"></button>Burger</li>
+          <li><button><img src="public/assets/iteration-2/icons/4.svg"></button>French Fries</li>
+          <li><button><img src="public/assets/iteration-2/icons/5.svg"></button>Fast Food</li>
+          <li><button><img src="public/assets/iteration-2/icons/6.svg"></button>Soft Drinks</li>
+        </div>
+      </section>
 
-      <div class="menu-items">
-        <li><button><img src="public/assets/iteration-2/icons/1.svg"></button>Ramen</li>
-        <li><button><img src="public/assets/iteration-2/icons/2.svg"></button>Pizza</li>
-        <li><button><img src="public/assets/iteration-2/icons/3.svg"></button>Burger</li>
-        <li><button><img src="public/assets/iteration-2/icons/4.svg"></button>French Fries</li>
-        <li><button><img src="public/assets/iteration-2/icons/5.svg"></button>Fast Food</li>
-        <li><button><img src="public/assets/iteration-2/icons/6.svg"></button>Soft Drinks</li>
-      </div>
-
-      <div class="food-and-drinks row">
+      <div class="food-and-drinks row" style="display: flex;
+  flex-wrap: wrap;justify-content: center;">
 
         <div class="food-and-drink column">
           <img class="images-center" src="public/assets/iteration-2/pictures/food-1.png">
@@ -114,10 +116,46 @@
     <!--Product Section End-->
 
     <!--Footer Section Start-->
-    <section class="footer">
-
-    </section>
+    <footer class=" footer-section wrap">
+      <div class="row footer-div" style="display: flex; justify-content: space-between;">
+        <div class="column footer-images" style=" padding:0 2rem;justify-content: space-evenly;">
+          <img src="public/assets/iteration-2/footer/logo-footer.svg"
+            style="width: 10rem;margin: -2.5rem 0;padding-bottom:4rem ;">
+          <a><img src="public/assets/iteration-2/footer/icons/icon-1.png">341 Londonderry Road,<br><a
+              style="margin-left: 2rem;">İstanbul Türkiye</a></a>
+          <a><img src="public/assets/iteration-2/footer/icons/icon-2.png">aciktim@teknolojikyemekler.com</a>
+          <a><img src="public/assets/iteration-2/footer/icons/icon-3.png">+90 216 123 45 67</a>
+        </div>
+        <div class="column footer-images" style="padding: 0 2rem;justify-content: space-around;">
+          <h2>Hot Menu</h2>
+          <a>Terminal Pizza</a>
+          <a>5 Kişilik Hackathlon Pizza</a>
+          <a>useEffect Tavuklu Pizza</a>
+          <a>Beyaz Console Frosty</a>
+          <a>Testler Geçti Mutlu Burger</a>
+          <a>Position Absolute Acı Burger</a>
+        </div>
+        <div class="column footer-images" style="padding: 0 2rem;
+          justify-content: space-between;">
+          <h2>Instagram</h2>
+          <div class="row" style="display: flex;flex-wrap: wrap;">
+            <img src="public/assets/iteration-2/footer/insta/li-0.png"></img>
+            <img src="public/assets/iteration-2/footer/insta/li-1.png"></img>
+            <img src="public/assets/iteration-2/footer/insta/li-2.png"></img>
+          </div>
+          <div class="row" style="margin-top:1rem;display: flex; flex-wrap: wrap;">
+            <img src="public/assets/iteration-2/footer/insta/li-3.png"></img>
+            <img src="public/assets/iteration-2/footer/insta/li-4.png"></img>
+            <img src="public/assets/iteration-2/footer/insta/li-5.png"></img>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!--Footer Section End-->
+    <div class="bottom-end">
+      <a>© 2023 Teknolojik Yemekler.</a>
+      <img src="public/assets/iteration-2/footer/twitter.svg" style="width: 2rem;">
+    </div>
   </section>
 </body>
 
